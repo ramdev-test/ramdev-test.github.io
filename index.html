@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://ramiroev7.github.io/images-toolbox-lu/logo.png" />
+    <title>Image Partitioner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#120d18',
+              'brand-surface': '#1f182c',
+              'brand-muted': '#3c2d52',
+            }
+          }
+        }
+      }
+    </script>
+
+<style>
+  /* --- Custom Scrollbar Styling --- */
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #3c2d52 #1f182c; /* thumb color, track color */
+  }
+
+  /* Webkit-based browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1f182c; /* brand-surface */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #3c2d52; /* brand-muted */
+    border-radius: 10px;
+    border: 2px solid #1f182c; /* creates padding around thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #5a4a75; /* Lighter purple */
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "vite": "https://aistudiocdn.com/vite@^7.1.6",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.3",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+    "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5",
+    "docxtemplater": "https://aistudiocdn.com/docxtemplater@^3.67.1",
+    "pizzip": "https://aistudiocdn.com/pizzip@^3.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-DhYOMaVv.js"></script>
+</head>
+  <body class="bg-brand-bg">
+    <div id="root"></div>
+  </body>
+</html>
