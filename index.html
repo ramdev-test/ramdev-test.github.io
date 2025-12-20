@@ -1,76 +1,72 @@
-<!doctype html>
-<html lang="es" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://ramiroev7.github.io/images-toolbox-lu/logo.png" />
-    <title>Image Partitioner</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              'brand-bg': '#120d18',
-              'brand-surface': '#1f182c',
-              'brand-muted': '#3c2d52',
-            }
-          }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19/12/2025</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
         }
-      }
-    </script>
 
-<style>
-  /* --- Custom Scrollbar Styling --- */
-  
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #3c2d52 #1f182c; /* thumb color, track color */
-  }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-primary);
+            text-align: center;
+            line-height: 1.6;
+        }
 
-  /* Webkit-based browsers (Chrome, Safari, Edge) */
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
+        .container {
+            padding: 2rem;
+            max-width: 600px;
+        }
 
-  ::-webkit-scrollbar-track {
-    background: #1f182c; /* brand-surface */
-    border-radius: 10px;
-  }
+        .date {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.1em;
+        }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: #3c2d52; /* brand-muted */
-    border-radius: 10px;
-    border: 2px solid #1f182c; /* creates padding around thumb */
-  }
+        .message {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #5a4a75; /* Lighter purple */
-  }
-</style>
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "vite": "https://aistudiocdn.com/vite@^7.1.6",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.3",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
-    "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5",
-    "docxtemplater": "https://aistudiocdn.com/docxtemplater@^3.67.1",
-    "pizzip": "https://aistudiocdn.com/pizzip@^3.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="./assets/index-DmlnGl6l.js"></script>
+        .line {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .message {
+                font-size: 1.25rem;
+            }
+            .date {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
-  <body class="bg-brand-bg">
-    <div id="root"></div>
-  </body>
+<body>
+    <div class="container">
+        <div class="date">19/12/2025 23:12</div>
+        <div class="message">
+            <span class="line">Este día terminaste de romper el único pedazo que quedaba en mi corazón</span>
+            <span class="line">Este día dejaré de existir para ti.</span>
+        </div>
+    </div>
+</body>
 </html>
+
